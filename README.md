@@ -9,7 +9,10 @@
 * Used shared preferrences to maintain user authentication.
 * Maintained the industry code standard and used material design to implement different components.
 
-## How to test this app:
+## How to install this app:
+* Download the app-debug.apk file and install it on your android device.
+
+## How to test and debug this app:
 
 * Clone the repository and use visual studio code or android studio to run this project. For visual studio install Dart and Flutter extention.
 * Run project with/without debugging.
