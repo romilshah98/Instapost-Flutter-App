@@ -89,7 +89,7 @@ class Post extends StatelessWidget {
                         children: [
                           Icon(Icons.face),
                           Text(
-                            'User',
+                            ' User',
                             style: const TextStyle(
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
@@ -154,13 +154,16 @@ class Post extends StatelessWidget {
                           ),
                           Text(
                             '${post['text']}',
-                            style: const TextStyle(fontSize: 15),
+                            style: const TextStyle(fontSize: 20),
                           ),
                           Text(
                             snapshot.data[1]
                                 ? '${post['hashtags'].join(' ')}'
                                 : '${post['hashtags']}',
-                            style: const TextStyle(fontSize: 15),
+                            style: const TextStyle(
+                              fontSize: 15,
+                              color: Colors.blue,
+                            ),
                           ),
                         ],
                       ),

@@ -95,13 +95,21 @@ class _CommentsState extends State<Comments> {
                   itemBuilder: (BuildContext context, int index) {
                     return Column(
                       children: [
-                        Card(
-                          elevation: 5,
-                          child: ListTile(
-                            title: Text(
-                                '${widget.isOnline ? widget.comments[index] : widget.comments[index]['comment']}'),
+                        ListTile(
+                          title: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                'Anonymous User',
+                                style: const TextStyle(
+                                    fontSize: 10, color: Colors.grey),
+                              ),
+                              Text(
+                                  '${widget.isOnline ? widget.comments[index] : widget.comments[index]['comment']}',style: TextStyle(fontSize:20),),
+                            ],
                           ),
                         ),
+                        Divider(),
                         if (index == widget.comments.length - 1)
                           const SizedBox(
                             height: 55,

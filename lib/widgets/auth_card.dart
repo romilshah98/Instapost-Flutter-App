@@ -386,7 +386,7 @@ class _AuthCardState extends State<AuthCard> {
                         ),
                       FlatButton(
                         child: Text(
-                            ' ${_mode == Mode.Login ? 'Not a user SIGNUP' : 'Already a user LOGIN'} INSTEAD'),
+                            ' ${_mode == Mode.Login ? 'SIGNUP' : 'LOGIN'} INSTEAD'),
                         onPressed: _switchMode,
                         padding: const EdgeInsets.symmetric(
                             horizontal: 30, vertical: 4),

@@ -28,12 +28,15 @@ class AuthScreen extends StatelessWidget {
                       vertical: 10,
                       horizontal: 90,
                     ),
-                    child: const Text(
-                      'INSTAPOST',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 35,
-                        fontWeight: FontWeight.bold,
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                      child: const Text(
+                        'INSTAPOST',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 35,
+                          fontWeight: FontWeight.bold,
+                        ),
                       ),
                     ),
                   ),
